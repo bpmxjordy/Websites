@@ -5,7 +5,12 @@ session_destroy();
 ?>
 <link rel="stylesheet" href="css/registration.css">
 <body>
-<?php
+
+<div id="main-contents">
+    <h1>Register</h1>
+    <div id="form-div">
+
+    <?php
     require('db.php');
     // When form submitted, insert values into the database.
     if (isset($_REQUEST['username'])) {
@@ -34,9 +39,7 @@ session_destroy();
         }
     } else {
 ?>
-<div id="main-contents">
-    <h1>Register</h1>
-    <div id="form-div">
+
         <form id="form-container">
         <div class="form-group">
             <label for="exampleInputEmail1">Username & Email Address</label>

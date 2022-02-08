@@ -5,7 +5,12 @@ session_destroy();
 ?>
 <link rel="stylesheet" href="css/registration.css">
 <body>
-<?php
+
+<div id="main-contents">
+    <h1>Login</h1>
+    <div id="form-div">
+
+    <?php
     require('db.php');
     session_start();
     // When form submitted, check and create user session.
@@ -26,14 +31,12 @@ session_destroy();
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  <p class='link'>Click here to <a href='login.php'>try</a> again.</p>
+                  <p class='link'>Click here to <a href='registration.php'>register</a></p>
                   </div>";
         }
     } else {
 ?>
-<div id="main-contents">
-    <h1>Login</h1>
-    <div id="form-div">
         <form id="form-container" method="post" name="login"> 
         <div class="form-group">
             <label for="exampleInputEmail1">Username</label>

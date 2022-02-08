@@ -53,7 +53,7 @@ if(empty($_SESSION["username"])) {
       Profile
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-      <a class="dropdown-item" href="#">Profile Page</a>
+      <a class="dropdown-item" href="profile.php">Profile Page</a>
       <a href="logout.php" class="nav-link"><button class="btn btn-outline-success my-2 my-sm-0" type="button" name="logout" >Logout</button></a>
     </div>
   </li>  ');
